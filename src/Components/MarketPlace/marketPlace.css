@@ -1,0 +1,23 @@
+.market{
+  display: flex;
+  flex-direction: column;
+  
+}
+.panelList-wrap,
+.panel-wrap,
+.list-wrap {
+  overflow-y: auto;
+}
+
+.panelList-wrap {
+  flex: 1;
+  display: flex;
+}
+.panel-wrap {
+  flex-basis: 280px;
+  padding: 1rem;
+}
+.list-wrap {
+  flex: 1;
+  padding: 1rem;
+}

@@ -1,0 +1,48 @@
+/* 
+
+ .inner-carousel{
+  display: flex;
+  overflow-x: hidden;
+} 
+
+.carousel{
+  cursor: grab;
+  overflow: hidden;
+  margin: 5% 10%;
+} */
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  /* hide scrollbar for webkit-based browsers */
+  -webkit-scrollbar:none;
+  
+  /* hide scrollbar for Firefox */
+  overflow: -moz-scrollbars-none;
+  margin: 0 20%;
+}
+
+
+.inner-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+   /* overflow-x: hidden; */
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 20px;
+  min-height:20rem ;
+  padding: 10px;
+}
+
+.item img{
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+

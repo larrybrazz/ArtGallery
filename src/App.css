@@ -1,0 +1,25 @@
+
+.input{
+    padding: 6px 20px;
+}
+.input::placeholder{
+ font-size: 10px;
+ text-align: center;
+}
+
+.overlay{
+    display: grid;
+    gap: 60px;
+    grid-template-columns:30px 1fr auto;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 1250px) {
+    .overlay{
+    display:block;
+    position: absolute;
+    top: 0%;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+} }
