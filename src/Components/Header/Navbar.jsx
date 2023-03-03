@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import Menu from "./Menu";
 
-const Navbar = ({ handleMenuClose }) => {
+const Navbar = () => {
   const [display, setDisplay] = useState(false);
   const {cartTotalQuantity} = useSelector(state => state.cart)
 

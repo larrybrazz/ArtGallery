@@ -9,9 +9,9 @@ const MappedCartItems = () => {
       <>
         <div>
           {cart.cartItems.length === 0 ? (
-            <div>
+            <div className='font-semibold w-11/12 mx-auto'>
               <p> Cart is Empty</p>
-              <Link to="/">Start Shopping</Link>
+              <Link className='text-blue-300' to="/marketplace">Click here to Start Shopping</Link>
             </div>
           ) : (
             <ul>

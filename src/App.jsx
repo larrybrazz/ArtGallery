@@ -10,7 +10,7 @@ import Auctions from "./Components/Auctions/Auctions";
 import ProductDisplay from "./Components/MarketPlace/ProductDisplay";
 import Cart from "./Components/Cart/Cart";
 import ShoppingCart from "./Components/Cart/ShoppingCart";
-import ShoppingDetails from "./Components/Cart/ShippingDetails";
+import ShippingDetails from "./Components/Cart/ShippingDetails";
 import PaymentDetails from "./Components/Cart/PaymentDetails";
 import { ToastContainer } from "react-toastify";
 import Livebid from "./Components/Auctions/Livebid";
@@ -35,7 +35,7 @@ function App() {
           />
           <Route path="/cart" element={<Cart />} />
           <Route path="/shoppingcart" element={<ShoppingCart />} />
-          <Route path="/shoppingdetails" element={<ShoppingDetails />} />
+          <Route path="/shippingdetails" element={<ShippingDetails />} />
           <Route path="/paymentdetails" element={<PaymentDetails />} />
           <Route path="/livebid" element={<Livebid />} />
         </Routes>

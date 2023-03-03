@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Cart from './Cart'
 import CartTotal from './CartTotal';
 import MappedCartItems from './MappedCartItems';
@@ -62,11 +63,13 @@ const ShippingDetails = () => {
             type="text"
             className="border border-slate-400 rounded w-full py-2 bg-gray-200"
           />
-          <button className="bg-blue-700 rounded w-full py-3 text-white">
-            Proceed to payment
-          </button>
+          <Link to="/paymentdetails" >
+            <button className="bg-blue-700 rounded w-full py-3 text-white">
+              Proceed to payment
+            </button>
+          </Link>
         </div>
-        <div className='hidden md:block'>
+        <div className="hidden md:block">
           <MappedCartItems />
           <CartTotal />
         </div>

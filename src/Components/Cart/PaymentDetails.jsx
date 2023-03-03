@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Cart from './Cart'
 import CartTotal from './CartTotal';
 
@@ -74,10 +75,11 @@ const PaymentDetails = () => {
                 </div>
               </div>
             </div>
-
-            <button className="bg-blue-700 rounded w-full py-3 text-white">
-              Confirm
-            </button>
+            <Link to="/" >
+              <button className="bg-blue-700 rounded w-full py-3 text-white">
+                Confirm
+              </button>
+            </Link>
           </div>
           <div className="space-y-6 sm:block hidden">
             <p className="font-semibold text-lg">Payment Summary</p>
